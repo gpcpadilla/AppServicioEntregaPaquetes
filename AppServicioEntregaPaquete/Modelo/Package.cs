@@ -17,8 +17,8 @@ namespace AppServicioEntregaPaquete
         private string departamento;
         private long codigopostalremitente;
         private long codigopostaldestinatario;
-        private double pesokg;
-        private double costogramo;
+        private double pesokg=2;
+        private double costogramo=1500;
         private double costoasociado;
         #endregion
        
@@ -209,9 +209,14 @@ namespace AppServicioEntregaPaquete
         /// <summary>
         /// calcula el costo del envio 
         /// </summary>
-        public double calculateCost();
-                
-              this.costoasociado=(this.costogramo*this.pesokg);
+        public double calculateCost (double costoasociado)
+        {
+            
+           
+
+            costoasociado = (this.costogramo + this.pesokg);
+            return costoasociado;
+        }
 
         
 
