@@ -92,10 +92,7 @@ namespace AppServicioEntregaPaquete
         public double calculateCost(double costoasociado)
         {
 
-
-
-            costoasociado = ((this.costogramo + this.pesokg) + this.cuotafija);
-            return costoasociado;
+            return    (base.calculateCost() + this.costoentreganocturno);;
         }
 
 

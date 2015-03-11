@@ -209,13 +209,10 @@ namespace AppServicioEntregaPaquete
         /// <summary>
         /// calcula el costo del envio 
         /// </summary>
-        public double calculateCost (double costoasociado)
+        public double calculateCost ()
         {
-            
-           
 
-            costoasociado = (this.costogramo + this.pesokg);
-            return costoasociado;
+            return (this.costogramo + this.pesokg);
         }
 
         
