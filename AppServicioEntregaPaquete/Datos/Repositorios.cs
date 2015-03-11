@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using AppServicioEntregaPaquete.Modelo
+using AppServicioEntregaPaquete.Modelo;
 
 namespace AppServisioEntregaPaquete.Datos
 {
@@ -12,7 +12,8 @@ namespace AppServisioEntregaPaquete.Datos
 
         public IEnumerable<Package> getPackage()
         {
-            Package p1 = new Package();
+            Package p1 =
+                new Package();
 
             Package p2 = new Package();
 

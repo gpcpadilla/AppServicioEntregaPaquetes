@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using AppServicioEntregaPaquete.Modelo;
-using AppServicioEntregaPaquete.Datos;
+using AppServisioEntregaPaquete.Datos;
 
 namespace AppServicioEntregaPaquete.Web
 {
