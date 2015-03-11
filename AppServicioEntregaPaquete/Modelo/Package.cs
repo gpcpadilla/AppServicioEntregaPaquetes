@@ -9,69 +9,140 @@ namespace AppServicioEntregaPaquete
     public class Package
     {
         #region "Atributos"
-        private string codigo;
-        private string nombre;
-        private string direccion;
-        private string ciudad;
+        private int codigopaquete;
+        private int ccremitente;
+        private int ccdestinatario;
+        private string nombreremitente;
+        private string nombredestinatario;
+        private string direccionremitente;
+        private string direcciondestinatario;
+        private string ciudadremitente;
+        private string ciudaddestinatario;
         private string estado;
-        private string departamento;
-        private long codigopostalremitente;
-        private long codigopostaldestinatario;
-        private double pesokg=2;
-        private double costogramo=1500;
-        private double costoasociado;
+        private string departamentoremitente;
+        private string departamentodestinatario;
+        private int codigopostalremitente;
+        private int codigopostaldestinatario;
+        private double pesokg = 2;
+        private double costogramo = 1500;
+
         #endregion
-       
-         #region "Propiedades"
+
+        #region "Propiedades"
         /// <summary>
-        /// Establece o retorna el valor de la codigo
+        /// Establece o retorna el codigo del paquete 
         /// </summary>
-        public string Codigo
+        public int CodigoPaquete
         {
-            get { return codigo; }
-            set { codigo = value; }
+            get { return codigopaquete; }
+            set { codigopaquete = value; }
         }
         /// <summary>
-        /// Establece o retorna el nombre
+        /// Establece o retorna la cedula del remitente
+        /// </summary>
+        public int CedulaRemitente
+        {
+            get { return codigopaquete; }
+            set { codigopaquete = value; }
+        }
+        /// <summary>
+        /// Establece o retorna la cedula del destinatario
+        /// </summary>
+        public int CedulaDestinatario
+        {
+            get { return ccdestinatario; }
+            set { ccdestinatario = value; }
+        }
+        /// <summary>
+        /// Establece o retorna el nombre del remitente
+        /// </summary>
+        public string NombreRemitente
+        {
+            get { return nombreremitente; }
+            set { nombreremitente = value; }
+        }
+        /// <summary>
+        /// Establece o retorna el nombre del destinatario
         /// </summary>
         public string Nombre
         {
-            get { return nombre; }
-            set { nombre = value; }
-        }
-        /// <summary>
-        /// Establece o retorna la dirrecion
-        /// </summary>
-        public string Direccion
-        {
-            get { return direccion; }
-            set { direccion = value; }
+            get { return nombredestinatario; }
+            set { nombredestinatario = value; }
         }
 
         /// <summary>
+        /// Establece o retorna la dirrecion del remitente
+        /// </summary>
+        public string DireccionRemitente
+        {
+            get { return direccionremitente; }
+            set { direccionremitente = value; }
+        }
+
+        /// <summary>
+        /// Establece o retorna la dirrecion del destinatario
+        /// </summary>
+        public string DireccionDestinatario
+        {
+            get { return direcciondestinatario; }
+            set { direcciondestinatario = value; }
+        }
+        /// <summary>
         /// Establece o retorna el estado
         /// </summary>
+        /// 
+
+        public string CiudadRemitente
+        {
+            get { return ciudaddestinatario; }
+            set { ciudaddestinatario = value; }
+        }
+
+        /// <summary>
+        /// Establece o retorna la dirrecion del destinatario
+        /// </summary>
+        public string CiudadDEstinatario
+        {
+            get { return direcciondestinatario; }
+            set { direcciondestinatario = value; }
+        }
+        /// <summary>
+        /// Establece o retorna el estado
+        /// </summary>
+
+
         public string Estado
         {
+
             get { return estado; }
             set { estado = value; }
         }
 
         /// <summary>
-        /// Establece o retorna el departamento
+        /// Establece o retorna el departamento del remitente
         /// </summary>
         /// 
-        public string Departamento
+        public string DepartamentoRemitente
         {
-            get { return departamento ; }
-            set { departamento = value; }
+            get { return departamentoremitente; }
+            set { departamentoremitente = value; }
+        }
+
+        /// <summary>
+        /// Establece o retorna el departamento del destinatario
+        /// </summary>
+        /// 
+        public string DepartamentoDEstinatario
+        {
+            get { return departamentodestinatario; }
+            set { departamentodestinatario = value; }
         }
 
         /// <summary>
         /// Establece o retorna el codigo postal del remitente 
         /// </summary>
 
-        public long CodigoPostalRemitente
+        public int CodigoPostalRemitente
         {
             get { return codigopostalremitente; }
             set { codigopostalremitente = value; }
@@ -81,7 +152,7 @@ namespace AppServicioEntregaPaquete
         /// Establece o retorna el codigo postal del destinatario
         /// </summary>
         /// 
-       public long CodigoPostalDestinatario
+        public int CodigoPostalDestinatario
         {
             get { return codigopostaldestinatario; }
             set { codigopostaldestinatario = value; }
@@ -112,44 +183,65 @@ namespace AppServicioEntregaPaquete
         ///</summary>
         public Package()
         {
-            this.codigo = "1047424720";
-            this.nombre= "geovanni padilla cervantes";
-            this.direccion = "nuevo bosque mz16-lt10-2et";
-            this.ciudad = "cartagena";
+            this.codigopaquete = 00000;
+            this.ccremitente = 104742720;
+            this.codigopaquete = 00000;
+            this.nombreremitente = "geovanni padilla cervantes";
+            this.nombredestinatario = "edwin";
+            this.direccionremitente = "nuevo bosque mz16-lt10-2et";
+            this.direcciondestinatario = "utb";
+            this.ciudadremitente = "cartagena";
+            this.ciudaddestinatario = "cartagena";
             this.estado = "enviado";
-            this.departamento = "bolivar";
+            this.departamentoremitente = "bolivar";
+            this.departamentodestinatario = "bolivar";
             this.codigopostalremitente = 0001;
             this.codigopostaldestinatario = 0002;
             this.pesokg = 2;
-            this.costogramo =3.500 ;
+            this.costogramo = 3.500;
         }
 
         ///<summary>
         ///Contructor de inicialización Package
         ///</summary>
-        ///<param name="codigo"> Codigo de la persona</param>
-        ///<param name="nombre"> Nombre De La Persona</param>
-        ///<param name="direccion"> Direccion De La Persona</param>
+        ///<param name="codigopaquet"> Codigo del paquete </param>
+        ///<param name="ccremitente"> Cedula del remitente </param>
+        ///<param name="ccdestinatario"> Cedula del destinatario </param>
+        ///<param name="nombreremitente"> Nombre del remitente</param>
+        ///<param name="nombredestinatario"> Nombre del destinatario</param>
+        ///<param name="direccionremitente"> Direccion del remitente</param>
+        ///<param name="cuidadremitente"> Direccion del remitente</param>
+        ///<param name="ciudaddestinatario"> Direccion del destinatario</param>
+        ///<param name="direcciondestinatario"> Direccion del destinatario</param>
         ///<param name="estado"> Estado De Envio</param>
-        ///<param name="departamento"> Departamento</param>
+        ///<param name="departamentoremitente"> Departamento del remitente</param>
+        ///<param name="departamentodestinatario"> Departamento del destinatario</param>
         ///<param name="codigopostalremitente"> Codigo postal del remitente</param>
         ///<param name="codigopostaldestinatario"> codigo postal del destinatario</param>
         ///<param name="pesokg"> Peso en KG</param>
         ///<param name="costogramo"> Costo del gramo </param>
         ///
-        public Package(string codigo, string nombre, string direccion, string estado, string departamento, 
-            long codigopostalremitente, long codigopostaldestinatario, double pesokg, double costogramo )
+        public Package(int codigopaquete, int ccremitente, int ccdestinatario, string nombreremitente,
+            string nombredestinatario, string direccionremitente, string direcciondestinatario,
+            string ciudadremitente, string ciudaddestinatario, string estado, string departamentoremitente,
+            string departamentodestinatario, int codigopostalremitente, int codigopostaldestinatario,
+            double pesokg, double costogramo)
         {
-            this.codigo = codigo;
-            this.nombre = nombre;
-            this.direccion = direccion;
+            this.codigopaquete = codigopaquete;
+            this.ccremitente = ccremitente;
+            this.ccdestinatario = ccdestinatario;
+            this.nombreremitente = nombreremitente;
+            this.direccionremitente = direccionremitente;
+            this.direcciondestinatario = direcciondestinatario;
+            this.ciudadremitente = ciudadremitente;
             this.estado = estado;
-            this.departamento= departamento;
+            this.departamentoremitente = departamentoremitente;
+            this.departamentodestinatario = departamentodestinatario;
             this.codigopostalremitente = codigopostalremitente;
             this.codigopostaldestinatario = codigopostaldestinatario;
             this.pesokg = pesokg;
             this.costogramo = costogramo;
-            
+
         }
         #endregion
 
@@ -160,15 +252,22 @@ namespace AppServicioEntregaPaquete
         public override string ToString()
         {
             return "\n=============================================\n" +
-                     "Codigo:  " + this.codigo + "\n" +
-                     "Nombre:  " + this.nombre + "\n" +
-                     "Direccion:  " + this.direccion + "\n" +
+                     "Codigo:  " + this.codigopaquete + "\n" +
+                     "Cedula remitente:  " + this.ccremitente + "\n" +
+                     "Cedula destinatario:  " + this.ccdestinatario + "\n" +
+                     "Nombre remitente:  " + this.nombreremitente + "\n" +
+                     "Nombre destinatario:  " + this.nombredestinatario + "\n" +
+                     "Direccion del remitente:  " + this.direccionremitente + "\n" +
+                     "Direccion del destinatario:  " + this.direcciondestinatario + "\n" +
+                     "Ciudad del remitente:  " + this.ciudadremitente + "\n" +
+                     "Ciudad del destinatario:  " + this.ciudaddestinatario + "\n" +
                      "Estado:  " + this.estado + "\n" +
-                     "Departamento:  " + this.departamento + "\n" +
+                     "Departamento del remitente:  " + this.departamentoremitente + "\n" +
                      "Codigo Postal Del Remitentel:  " + this.codigopostalremitente + "\n" +
                      "Codigo Postal Del Destinatario:  " + this.codigopostaldestinatario + "\n" +
                      "Peso En KG:  " + this.pesokg + "\n" +
-                     "Costo En Gramos:  " + this.costogramo;
+                     "Costo En Gramos:  " + this.costogramo +
+             "\n=============================================\n";
 
         }
 
@@ -180,23 +279,30 @@ namespace AppServicioEntregaPaquete
             Package o = (Package)obj;
             bool result = false;
 
-            if ((this.codigo == o.codigo) &&
-                (this.nombre == o.nombre) &&
-                (this.direccion == o.direccion) &&
+            if ((this.codigopaquete == o.codigopaquete) &&
+                (this.ccremitente == o.ccremitente) &&
+                (this.ccdestinatario == o.ccdestinatario) &&
+                (this.nombreremitente == o.nombreremitente) &&
+                (this.nombredestinatario == o.nombredestinatario) &&
+                (this.direccionremitente == o.direccionremitente) &&
+                (this.direcciondestinatario == o.direcciondestinatario) &&
+                (this.ciudadremitente == o.ciudadremitente) &&
+                (this.ciudaddestinatario == o.direcciondestinatario) &&
                 (this.estado == o.estado) &&
-                (this.departamento== o.departamento) &&
+                (this.departamentoremitente == o.departamentoremitente) &&
+                (this.departamentodestinatario == o.departamentodestinatario) &&
                 (this.codigopostalremitente == o.codigopostalremitente) &&
                 (this.codigopostaldestinatario == o.codigopostaldestinatario) &&
                 (this.costogramo == o.costogramo) &&
                 (this.pesokg == o.pesokg))
-                
+
                 result = true;
 
             return result;
         }
 
 
-             
+
 
         /// <summary>
         /// Devuelve la identificación del objecto
@@ -209,19 +315,19 @@ namespace AppServicioEntregaPaquete
         /// <summary>
         /// calcula el costo del envio 
         /// </summary>
-        public double calculateCost ()
+        public double calculateCost()
         {
 
-            return (this.costogramo + this.pesokg);
+            return (this.costogramo * this.pesokg);
         }
 
-        
+
 
         #endregion
 
-        
 
-        
+
+
 
     }
 }
