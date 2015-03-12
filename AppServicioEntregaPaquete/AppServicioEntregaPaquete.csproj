@@ -62,10 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnviosRepositorios.cs" />
-    <Compile Include="Modelo\OvernightPackage.cs" />
-    <Compile Include="Modelo\Package.cs" />
+    <Compile Include="OvernightPackage.cs" />
+    <Compile Include="Package.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Modelo\TwoDayPac.cs" />
+    <Compile Include="TwoDayPac.cs" />
     <Compile Include="Enviar.aspx.cs">
       <DependentUpon>Enviar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
