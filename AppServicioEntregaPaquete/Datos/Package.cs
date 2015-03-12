@@ -132,7 +132,7 @@ namespace AppServicioEntregaPaquete
         /// Establece o retorna el departamento del destinatario
         /// </summary>
         /// 
-        public string DepartamentoDEstinatario
+        public string DepartamentoDestinatario
         {
             get { return departamentodestinatario; }
             set { departamentodestinatario = value; }
@@ -183,9 +183,9 @@ namespace AppServicioEntregaPaquete
         ///</summary>
         public Package()
         {
-            this.codigopaquete = 00000;
+            this.codigopaquete = 6754;
             this.ccremitente = 104742720;
-            this.codigopaquete = 00000;
+            this.ccdestinatario = 33466225;
             this.nombreremitente = "geovanni padilla cervantes";
             this.nombredestinatario = "edwin";
             this.direccionremitente = "nuevo bosque mz16-lt10-2et";
@@ -195,8 +195,8 @@ namespace AppServicioEntregaPaquete
             this.estado = "enviado";
             this.departamentoremitente = "bolivar";
             this.departamentodestinatario = "bolivar";
-            this.codigopostalremitente = 0001;
-            this.codigopostaldestinatario = 0002;
+            this.codigopostalremitente = 13001;
+            this.codigopostaldestinatario = 13002;
             this.pesokg = 2;
             this.costogramo = 3.500;
         }
@@ -252,22 +252,23 @@ namespace AppServicioEntregaPaquete
         public override string ToString()
         {
             return "\n=============================================\n" +
-                     "Codigo:  " + this.codigopaquete + "\n" +
-                     "Cedula remitente:  " + this.ccremitente + "\n" +
-                     "Cedula destinatario:  " + this.ccdestinatario + "\n" +
-                     "Nombre remitente:  " + this.nombreremitente + "\n" +
-                     "Nombre destinatario:  " + this.nombredestinatario + "\n" +
-                     "Direccion del remitente:  " + this.direccionremitente + "\n" +
-                     "Direccion del destinatario:  " + this.direcciondestinatario + "\n" +
-                     "Ciudad del remitente:  " + this.ciudadremitente + "\n" +
-                     "Ciudad del destinatario:  " + this.ciudaddestinatario + "\n" +
-                     "Estado:  " + this.estado + "\n" +
-                     "Departamento del remitente:  " + this.departamentoremitente + "\n" +
-                     "Codigo Postal Del Remitentel:  " + this.codigopostalremitente + "\n" +
+                     "Codigo Del Paquete:" + this.codigopaquete + "\n" + 
+                     "Cedula Del Remitente:  " + this.ccremitente + "\n" +
+                     "Cedula Del Destinatario:  " + this.ccdestinatario + "\n" +
+                     "Nombre Del Remitente:  " + this.nombreremitente + "\n" +
+                     "Nombre Del Destinatario:  " + this.nombredestinatario + "\n" +
+                     "Direccion Del Remitente:  " + this.direccionremitente + "\n" +
+                     "Direccion Del Destinatario:  " + this.direcciondestinatario + "\n" +
+                     "Ciudad Del Remitente:  " + this.ciudadremitente + "\n" +
+                     "Ciudad Del Destinatario:  " + this.ciudaddestinatario + "\n" +
+                     "Estado Del Envio:  " + this.estado + "\n" +
+                     "Departamento Del Remitente:  " + this.departamentoremitente + "\n" +
+                     "Departamento Del Destinatario:  " + this.departamentodestinatario + "\n" +
+                     "Codigo Postal Del Remitente:  " + this.codigopostalremitente + "\n" +
                      "Codigo Postal Del Destinatario:  " + this.codigopostaldestinatario + "\n" +
                      "Peso En KG:  " + this.pesokg + "\n" +
                      "Costo En Gramos:  " + this.costogramo +
-                    "\n=============================================\n";
+                   "\n=============================================\n";
 
         }
 

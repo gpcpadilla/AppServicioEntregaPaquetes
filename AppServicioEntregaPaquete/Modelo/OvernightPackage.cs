@@ -17,7 +17,7 @@ namespace AppServicioEntregaPaquete
         #region "Propiedades"
        
         /// <summary>
-        /// Establece o retorna el costo por cada gramo 
+        /// Establece o retorna el costo nocturno
         /// </summary>
          public double CostoEntregaNocturno
         {
@@ -29,7 +29,7 @@ namespace AppServicioEntregaPaquete
         
         #region "Constructores"
         ///<summary>
-        ///Contructor por defecto  de Package
+        ///Contructor por defecto  de OvernightPackage
         ///</summary>
         public OvernightPackage()
         {
@@ -38,9 +38,9 @@ namespace AppServicioEntregaPaquete
         }
 
         ///<summary>
-        ///Contructor de inicialización TwoDayPac
+        ///Contructor de inicialización OvernightPackage
         ///</summary>
-        ///<param name="cuotafija"> Cuota Fija</param>
+        ///<param name="costoentreganocturno"> Costo de entrega nocturno</param>
        
         ///
         public OvernightPackage(double costoentreganocturno)
@@ -59,7 +59,7 @@ namespace AppServicioEntregaPaquete
         {
             return "\n=============================================\n" +
 
-                     "Cuota Fija:  " + this.costoentreganocturno;
+                     "Costo den entrega nocturno:  " + this.costoentreganocturno;
 
         }
 
@@ -87,9 +87,9 @@ namespace AppServicioEntregaPaquete
         }
 
         /// <summary>
-        /// calcula el costo del envio 
+        /// calcula el costo de entrega nocturno
         /// </summary>
-        public double calculateCost(double costoasociado)
+        public double calculateCost()
         {
 
             return    (base.calculateCost() + this.costoentreganocturno);;

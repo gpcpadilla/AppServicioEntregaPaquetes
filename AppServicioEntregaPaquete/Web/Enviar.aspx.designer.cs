@@ -16,7 +16,7 @@ namespace AppServicioEntregaPaquete.Web {
         /// Control form1.
         /// </summary>
         /// <remarks>
-        /// Campo generado automáticamente.
+        /// este camgo se genero automaticamen.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;

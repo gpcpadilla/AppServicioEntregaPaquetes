@@ -15,7 +15,7 @@ namespace AppServicioEntregaPaquete
         #region "Propiedades"
        
         /// <summary>
-        /// Establece o retorna el costo por cada gramo 
+        /// Establece o retorna la cuota fija del envio
         /// </summary>
         public double CuotaFija
         {
@@ -27,7 +27,7 @@ namespace AppServicioEntregaPaquete
         
         #region "Constructores"
         ///<summary>
-        ///Contructor por defecto  de Package
+        ///Contructor por defecto  de TwoDayPac
         ///</summary>
         public TwoDayPac()
         {
@@ -87,7 +87,7 @@ namespace AppServicioEntregaPaquete
         /// <summary>
         /// calcula el costo del envio 
         /// </summary>
-        public double calculateCost()
+        public double calculaCost()
         {
             return (base.calculateCost() + this.cuotafija);
         }

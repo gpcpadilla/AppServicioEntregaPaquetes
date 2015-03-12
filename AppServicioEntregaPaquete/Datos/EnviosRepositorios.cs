@@ -12,12 +12,12 @@ namespace AppServicioEntregaPaquete.Datos
 
         public IEnumerable<Package> getPackage()
         {
-            Package p1 = new Package();
+            Package c1 = new Package();
 
-            Package p2 = new Package();
+            Package c2 = new Package();
 
-            data.Add(p1);
-            data.Add(p2);
+            data.Add(c1);
+            data.Add(c2);
 
             return data;
         }

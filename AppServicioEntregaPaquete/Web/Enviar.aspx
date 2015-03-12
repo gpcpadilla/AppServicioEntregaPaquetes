@@ -7,9 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
-<body>
+<body bgcolor="silver" >
 
-     <h1>Enviar Paquete</h1>
+    <font face="Comic Sans MS,arial" align="center"> 
+        <h1 >Enviar Paquete</h1>
+    </font>
+              
     <form id="form1" runat="server">
     <div>
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>

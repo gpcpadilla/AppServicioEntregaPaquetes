@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
-    <Content Include="Web\Enviar.aspx" />
+    <EmbeddedResource Include="Web\Enviar.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\EnviosRepositorios.cs" />
