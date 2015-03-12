@@ -20,7 +20,7 @@ namespace AppServicioEntregaPaquete.Web
             foreach (Package element in lista.getPackage())
                 result += "/n" + element;
 
-            Label1.Text = result.ToString().Replace("/n", "</br>");
+            Label1.Text = result.ToString().Replace("/n", "</br>");///este label pa que sirve 
         }
     }
 }
