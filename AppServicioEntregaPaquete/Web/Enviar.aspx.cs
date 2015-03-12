@@ -4,17 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using AppServicioEntregaPaquete.Datos;
 using AppServicioEntregaPaquete.Modelo;
-using AppServisioEntregaPaquete.Datos;
 
 namespace AppServicioEntregaPaquete.Web
 {
-    public partial class envio : System.Web.UI.Page
+    public partial class Enviar : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            Repositorios lista = new Repositorios();
+            EnviosRepositorios lista = new EnviosRepositorios();
 
             string result = "";
 

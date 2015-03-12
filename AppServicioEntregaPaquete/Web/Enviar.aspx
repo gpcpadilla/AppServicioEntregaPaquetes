@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Agenda.aspx.cs" Inherits="AppServicioEntregaPaquete.Web.envio" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Enviar.aspx.cs" Inherits="AppServicioEntregaPaquete.Web.Enviar" %>
 
 <!DOCTYPE html>
 
@@ -8,15 +8,12 @@
     <title></title>
 </head>
 <body>
-      <h1>envio</h1>
+
+     <h1>Enviar Paquete</h1>
     <form id="form1" runat="server">
     <div>
-         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-    
-      <br />
-    
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </div>
-       
     </form>
 </body>
 </html>

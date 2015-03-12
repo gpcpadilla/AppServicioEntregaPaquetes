@@ -267,7 +267,7 @@ namespace AppServicioEntregaPaquete
                      "Codigo Postal Del Destinatario:  " + this.codigopostaldestinatario + "\n" +
                      "Peso En KG:  " + this.pesokg + "\n" +
                      "Costo En Gramos:  " + this.costogramo +
-             "\n=============================================\n";
+                    "\n=============================================\n";
 
         }
 
