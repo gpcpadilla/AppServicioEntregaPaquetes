@@ -58,19 +58,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
-    <Content Include="Enviar.aspx" />
+    <Content Include="Web\Enviar.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnviosRepositorios.cs" />
-    <Compile Include="OvernightPackage.cs" />
-    <Compile Include="Package.cs" />
+    <Compile Include="Datos\EnviosRepositorios.cs" />
+    <Compile Include="Modelo\OvernightPackage.cs" />
+    <Compile Include="Datos\Package.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwoDayPac.cs" />
-    <Compile Include="Enviar.aspx.cs">
+    <Compile Include="Modelo\TwoDayPac.cs" />
+    <Compile Include="Web\Enviar.aspx.cs">
       <DependentUpon>Enviar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Enviar.aspx.designer.cs">
+    <Compile Include="Web\Enviar.aspx.designer.cs">
       <DependentUpon>Enviar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -82,6 +82,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
