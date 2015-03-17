@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="Datos\EnviosRepositorios.cs" />
     <Compile Include="Modelo\OvernightPackage.cs" />
-    <Compile Include="Datos\Package.cs" />
+    <Compile Include="Modelo\Package.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modelo\TwoDayPac.cs" />
     <Compile Include="Web\Enviar.aspx.cs">

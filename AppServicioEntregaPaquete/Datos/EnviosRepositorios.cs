@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using AppServicioEntregaPaquete.Datos;
+using AppServicioEntregaPaquete.Modelo;
 
 namespace AppServicioEntregaPaquete.Datos
 {
